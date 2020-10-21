@@ -1,8 +1,11 @@
-# real-estate-tracker
+# Full stack archiver project
 
 ## Property pages archiver
 ```
 Archives pages from real estate sites with AWS lambda
-and lets user search with APPSYNC and ELASTISEARCH
-```
 
+```
+## Single page search engine
+```
+Lets user search with APPSYNC and ELASTISEARCH
+```
