@@ -1,0 +1,43 @@
+type Property @model @searchable {
+  id: ID!
+  name: String!
+  url : String!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  rooms : Rooms @connection(name : "PropertyRooms")
+  propertyRoomsId : String
+  build : Build @connection(name : "PropertyBuild")
+  propertyBuildId : String
+  street : Street @connection(name : "PropertyStreet")
+  propertyStreetId : String
+  thumbnail : Image
+  price : String
+  page : String
+  location : String
+}
+
+type Street @model {
+    id : ID!
+    name : String!
+    properties : [Property] @connection(name : "PropertyStreet")
+}
+type Build @model {
+    id : ID!
+    name : String!
+    properties : [Property] @connection(name : "PropertyBuild")
+}
+type Rooms @model {
+    id : ID!
+    number : Int
+    properties : [Property] @connection(name : "PropertyRooms")
+}
+type Image @model {
+    id : ID!
+    name : String!
+    url : String
+    property : Property @connection
+}
+type Contact @model {
+    name : String!
+    link : String!
+}

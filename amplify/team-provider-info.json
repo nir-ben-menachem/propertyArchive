@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-realestatetracker-dev-151619-authRole",
+            "UnauthRoleArn": "arn:aws:iam::721326521512:role/amplify-realestatetracker-dev-151619-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::721326521512:role/amplify-realestatetracker-dev-151619-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-realestatetracker-dev-151619-deployment",
+            "UnauthRoleName": "amplify-realestatetracker-dev-151619-unauthRole",
+            "StackName": "amplify-realestatetracker-dev-151619",
+            "StackId": "arn:aws:cloudformation:eu-west-1:721326521512:stack/amplify-realestatetracker-dev-151619/94e2d790-0704-11eb-91ff-0652c6a49436",
+            "AmplifyAppId": "d13itsi28b9vgx"
+        },
+        "categories": {
+            "auth": {
+                "realestatetracker04dc4e3f": {}
+            }
+        }
+    }
+}
